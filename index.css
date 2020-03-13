@@ -1,0 +1,61 @@
+.container {
+    width: 80%;
+    background-color: rgb(147, 182, 147);
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+
+
+#textBlock {
+    width: 500px;
+    height: 250px;
+    background-color: grey;
+    margin: 50px 50px;
+}
+
+
+#area {
+    width: 500px;
+    height: 250px;
+    background-color: grey;
+    margin: 50px 50px;
+    display: none;
+}
+
+#btnSave {
+    width: 80px;
+    height: 30px;
+    margin: auto;
+}
+
+
+#btnStyle {
+    width: 80px;
+    height: 30px;
+    margin: auto;
+}
+
+.myBtn {
+    display: flex;
+    justify-content: center;
+}
+
+#emptyBlock {
+    display: flex;
+}
+
+
+#secondBlock {
+    width: 500px;
+    height: 250px;
+    background-color: grey;
+    margin: 50px 50px;
+    display: none;
+
+}
+
+
+
