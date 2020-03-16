@@ -19,24 +19,55 @@
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="myBtn">
-                <input type="button" value="edit" id="btnEdit">
-                <input type="button" value="style" id="btnStyle">
+        <div class="btnEditStyle">
+            <input type="button" value="edit" id="btnEdit">
+            <input type="button" value="style" id="btnStyle">
         </div>
 
         <div id="emptyBlock">
+
             <div id="firstBlock">
                 <textarea name="" id="area" cols="30" rows="10"></textarea>
-                <input type="button" id="btnAdd" value ="add">
-                <input type="button" id="btnSave" value = "save">
-            
+                    <div class="btnAddSave">
+                        <input type="button" id="btnAdd" value ="add">
+                        <input type="button" id="btnSave" value = "save">
+                    </div>
             </div>
-        
+                    
+            <div class="secondBlock">
+                <form name="style">
+                    <h3 class="fontSize">Font size</h3>
+                        <input type="radio" name="font" value="12px" checked>12px
+                        <input type="radio" name="font" value="14px">14px
+                        <input type="radio" name="font" value="16px">16px
+                        <input type="radio" name="font" value="18px">18px
+                        <input type="radio" name="font" value="20px">20px
+
+                    <h3>Font Family:</h3>
+                        <select name="family">
+                            <option value="Lato,sans-serif">'Lato', sans-serif;</option>
+                            <option value="'Bellota', cursive">'Bellota', cursive;</option>
+                            <option value="'Inconsolata', monospace">'Inconsolata', monospace;</option>
+                            <option value="'Crimson Text', serif">'Crimson Text', serif;</option>
+                            <option value="'Dancing Script', cursive">'Dancing Script', cursive;</option>
+                        </select>
+
+                    <h3>Colors : </h3>
+                        <input type="button" class="colorText" value="Color of text">
+                        <input type="button" class="colorBack" value="Background color">
+
+                    <h3>Style</h3>
+                        <input type="checkbox" name="checkbox" value="bold">Bold text
+                        <input type="checkbox" name="checkbox" value="normal">Normal
+                </form>
+            </div>
             
         </div>
     </div>
 
 
+    <script src="main.js"></script>
+</body>
         <script src="main.js"></script>
 </body>
 </html>
