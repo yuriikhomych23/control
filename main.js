@@ -1,9 +1,19 @@
-//EDIT
+
 
 let textBlock = document.getElementById('textBlock')
 let area = document.getElementById('area')
 let btnEdit = document.getElementById('btnEdit')
 let btnAdd = document.getElementById('btnAdd')
+let cont = document.querySelector('.cont')
+let ss = document.querySelector('.secondContainer')
+let container = document.querySelector('.container')
+let btnSave = document.getElementById('btnSave');
+let secondBlock = document.getElementById('secondBlock')
+let  btnStyle = document.getElementById('btnStyle'); 
+
+
+
+//BUTTON EDIT
 btnEdit.addEventListener('click', function(event) {
     area.style.display = 'flex';
     area.innerHTML = textBlock.innerHTML ;
@@ -12,9 +22,16 @@ btnEdit.addEventListener('click', function(event) {
     secondBlock.style.display = 'none';
 })
 
+//BUTTON ADD 
+btnAdd.addEventListener('click', function() {
+    container.style.display = 'none';
+    ss.style.display = 'block';
+})
 
-//SAVE
-let btnSave = document.getElementById('btnSave');
+
+
+//BUTTON SAVE
+
 btnSave.addEventListener('click', function() {
     textBlock.innerHTML = area.value;
     area.style.display = 'none';
@@ -23,9 +40,8 @@ btnSave.addEventListener('click', function() {
 })
 
 
-//STYLE
-let secondBlock = document.getElementById('secondBlock')
-let  btnStyle = document.getElementById('btnStyle'); 
+//BUTTON STYLE
+
 btnStyle.addEventListener('click', function() {
     secondBlock.style.display = 'flex';
     area.style.display = 'none';
@@ -35,7 +51,43 @@ btnStyle.addEventListener('click', function() {
 
 
 
-//BTN COLOR
+//FONT-FAMILY
+let form = document.forms['style'];
+form.family.addEventListener('change', function() {
+    textBlock.style.fontFamily = this.value;
+})
+
+
+//BUTTON TABLE
+// let choose = document.forms['choose'];
+// choose.table.addEventListener('click', function() {
+//     ss.style.display = 'none';
+//     cont.style.display = 'block';
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BTN COLOR  ДОРОБИТИ 
 let getSel = x => document.querySelector(x);
 let btnColor = document.getElementById('btnColor');
 let listColor = document.getElementById('listColor');
@@ -76,6 +128,7 @@ bold.addEventListener('click', function() {
 normal.addEventListener('click', function () {
     textBlock.style.fontWeight = this.value;
 })
+
 
 
 

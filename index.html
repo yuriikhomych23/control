@@ -35,16 +35,17 @@
             </div>
                     
             <div id="secondBlock">
+            
                 <form name="style">
-                    <h3 class="fontSize">Font size:</h3>
+                    <h3>Font size:</h3>
                         <input type="radio" name="font" value="12px" checked>12px
                         <input type="radio" name="font" value="14px">14px
                         <input type="radio" name="font" value="16px">16px
                         <input type="radio" name="font" value="18px">18px
                         <input type="radio" name="font" value="20px">20px
-
+                
                     <h3>Font Family:</h3>
-                        <select name="family" class="choose">
+                        <select name="family" class="choose" >
                             <option value="Lato,sans-serif">'Lato', sans-serif;</option>
                             <option value="'Bellota', cursive">'Bellota', cursive;</option>
                             <option value="'Inconsolata', monospace">'Inconsolata', monospace;</option>
@@ -77,6 +78,38 @@
         </div>
     </div>
 
+    <div class="secondContainer">
+
+
+
+            <h1>Choose what you want:</h1>
+                <form name="choose">
+                    <input type="radio" name="table" value="table">table
+                    <input type="radio" name="list" value="list">list
+                </form>
+
+            <div class="container__table">
+                <form name="table">
+                <div class="gg">
+                
+                    <h3>Count TR:</h3> 
+                    <input type="text" placeholder="Count TR: " name="tr">
+                </div>
+                <div class="ff">
+                    <h3>Count TD:</h3> 
+                    <input type="text" placeholder="Count TD: " name="td"> 
+                </div>
+                <h2>Add style to your table: </h2>
+                    <h3>Width of TD:</h3> 
+                    <input type="text" placeholder="Width of TD: " name="width__td">
+                    <h3>Height of TD:</h3> 
+                    <input type="text" placeholder="Height of TD: " name="height__td"> 
+
+            </div>
+                </form>
+        
+
+    </div>
 
     <script src="main.js"></script>
 </body>
