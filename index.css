@@ -8,10 +8,16 @@
     padding: 30px;
 }
 
+/* #firstBlock {
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+} */
+
 
 #emptyBlock {
     width: 70%;
-    height: 300px;
+    height: 400px;
     background-color: rgb(222, 229, 255);
     margin: 0 auto;
     border-radius: 10px;
@@ -26,6 +32,21 @@
     margin: 10px auto;
     display: none;
     border-radius: 10px;
+}
+
+#secondBlock {
+    width: 100%;
+    height: 90%;
+    display: none;
+}
+
+
+.choose {
+    width: 320px;
+    height: 40px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
 }
 
 
@@ -87,4 +108,104 @@
 .btnAddSave {
     display: flex;
     margin: 10px;
+}
+
+#btnColor {
+    width: 120px;
+    height: 40px;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+#btnBackground {
+    width: 120px;
+    height: 40px;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+
+.colorBox {
+    display: inline;
+    background-color: green;
+}
+
+/* HIDE CLASS */
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+
+#listColor {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 100px auto;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.firstRowLeftColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: red;
+    
+}
+
+.firstRowCenterColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: blue;
+}
+
+.firstRowRightColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: green;
+}
+
+.secondRowLeftColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: orange;
+}
+
+.secondRowCenterColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: yellow;
+}
+
+.secondRowRightColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: brown;
+}
+
+.thirdRowLeftColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: darkblue;
+}
+
+.thirdRowCenterColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: violet;
+}
+
+.thirdRowRightColor {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: palevioletred;
 }

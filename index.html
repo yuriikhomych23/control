@@ -34,9 +34,9 @@
                     </div>
             </div>
                     
-            <div class="secondBlock">
+            <div id="secondBlock">
                 <form name="style">
-                    <h3 class="fontSize">Font size</h3>
+                    <h3 class="fontSize">Font size:</h3>
                         <input type="radio" name="font" value="12px" checked>12px
                         <input type="radio" name="font" value="14px">14px
                         <input type="radio" name="font" value="16px">16px
@@ -44,7 +44,7 @@
                         <input type="radio" name="font" value="20px">20px
 
                     <h3>Font Family:</h3>
-                        <select name="family">
+                        <select name="family" class="choose">
                             <option value="Lato,sans-serif">'Lato', sans-serif;</option>
                             <option value="'Bellota', cursive">'Bellota', cursive;</option>
                             <option value="'Inconsolata', monospace">'Inconsolata', monospace;</option>
@@ -53,15 +53,27 @@
                         </select>
 
                     <h3>Colors : </h3>
-                        <input type="button" class="colorText" value="Color of text">
-                        <input type="button" class="colorBack" value="Background color">
+                        <input type="button" id="btnColor" value="Color of text">
+                        <input type="button" id="btnBackground" value="Background color">
 
-                    <h3>Style</h3>
-                        <input type="checkbox" name="checkbox" value="bold">Bold text
-                        <input type="checkbox" name="checkbox" value="normal">Normal
+                    <h3>Style:</h3>
+                        <input type="checkbox" id="bold" value="bold">Bold text
+                        <input type="checkbox" id="normal" value="normal">Normal
                 </form>
+           
+
+            <div id="listColor">
+                <div class="firstRowLeftColor"></div>
+                <div class="firstRowCenterColor"></div>
+                <div class="firstRowRightColor"></div>
+                <div class="secondRowLeftColor"></div>
+                <div class="secondRowCenterColor"></div>
+                <div class="secondRowRightColor"></div>
+                <div class="thirdRowLeftColor"></div>
+                <div class="thirdRowCenterColor"></div>
+                <div class="thirdRowRightColor"></div>
             </div>
-            
+            </div>
         </div>
     </div>
 
