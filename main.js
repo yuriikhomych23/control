@@ -9,6 +9,7 @@ let btnSave = document.getElementById('btnSave');
 let secondBlock = document.getElementById('secondBlock')
 let btnStyle = document.getElementById('btnStyle');
 let condition = document.querySelector('.condition')
+let secondCondition = document.querySelector('.secondCondition');
 
 
 //BUTTON EDIT
@@ -56,31 +57,11 @@ form.family.addEventListener('change', function() {
 })
 
 
-// BUTTON TABLE
-let btnTable = document.getElementById('btnTable');
-let tableCondition = document.forms['tableCondition'];
 
-btnTable.addEventListener('click', function() {
-    condition.style.display = 'block';
+let size = document.getElementsByName('fontSize');
+form.size.addEventListener('change', function() {
+    textBlock.style.fontSize = this.value;
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -90,7 +71,6 @@ btnTable.addEventListener('click', function() {
 let getSel = x => document.querySelector(x);
 let btnColor = document.getElementById('btnColor');
 let listColor = document.getElementById('listColor');
-let btnBackground = document.getElementById('btnBackground');
 btnColor.addEventListener('click', function() {
     listColor.style.display = 'flex';
     for (let i = 0; i < listColor.children.length; i++) {
@@ -104,6 +84,7 @@ btnColor.addEventListener('click', function() {
 
 
 //BTN BACKGROUND COLOR
+let btnBackground = document.getElementById('btnBackground');
 btnBackground.addEventListener('click', function() {
     listColor.style.display = 'flex';
     for (let i = 0; i < listColor.children.length; i++) {
@@ -126,7 +107,38 @@ bold.addEventListener('click', function() {
 
 normal.addEventListener('click', function () {
     textBlock.style.fontWeight = this.value;
+});
+
+
+
+// CREATE LIST
+let btnCreateList = document.querySelector('.btnCreateList');
+let formLift = document.forns['conditionList'];
+
+let createList = document.createElement('li');
+
+
+
+
+
+
+// BUTTON TABLE
+let btnTable = document.getElementById('btnTable');
+let btnList = document.getElementById('btnList')
+let tableCondition = document.forms['tableCondition'];
+
+btnTable.addEventListener('click', function() {
+    condition.style.display = 'block';
+    secondCondition.style.display = 'none';
+
 })
+// BUTTON LIST  
+btnList.addEventListener('click', function () {
+    condition.style.display = 'none';
+    secondCondition.style.display = 'block';
+})
+
+
 
 
 

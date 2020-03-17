@@ -141,7 +141,7 @@
 .none {
     display: none;
 }
-
+ 
 .flex {
     display: flex;
 }
@@ -221,7 +221,7 @@
     width: 70%;
     height: 700px;
     background-color: rgb(222, 229, 255);
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 10px;
     padding: 30px;
 }
@@ -231,12 +231,18 @@
     width: 100%;
 }
 
+.secondCondition {
+    display: none;
+    /* background-color: red; */
+    width: 100%;
+}
 
 .tr {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 
 .td {
     display: flex;
@@ -324,6 +330,49 @@
 .borderColor {
     width: 20%;
     height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+.countLi {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+#countLi {
+    width: 87%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+#marks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.marks {
+    width: 87%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btnCreateList {
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: #32CD32;
     border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
