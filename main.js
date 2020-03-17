@@ -1,5 +1,3 @@
-
-
 let textBlock = document.getElementById('textBlock')
 let area = document.getElementById('area')
 let btnEdit = document.getElementById('btnEdit')
@@ -9,8 +7,8 @@ let ss = document.querySelector('.secondContainer')
 let container = document.querySelector('.container')
 let btnSave = document.getElementById('btnSave');
 let secondBlock = document.getElementById('secondBlock')
-let  btnStyle = document.getElementById('btnStyle'); 
-
+let btnStyle = document.getElementById('btnStyle');
+let condition = document.querySelector('.condition')
 
 
 //BUTTON EDIT
@@ -58,12 +56,13 @@ form.family.addEventListener('change', function() {
 })
 
 
-//BUTTON TABLE
-// let choose = document.forms['choose'];
-// choose.table.addEventListener('click', function() {
-//     ss.style.display = 'none';
-//     cont.style.display = 'block';
-// })
+// BUTTON TABLE
+let btnTable = document.getElementById('btnTable');
+let tableCondition = document.forms['tableCondition'];
+
+btnTable.addEventListener('click', function() {
+    condition.style.display = 'block';
+})
 
 
 

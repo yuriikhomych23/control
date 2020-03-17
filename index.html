@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> CONTROL </title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
 
@@ -81,33 +82,89 @@
     <div class="secondContainer">
 
 
+            <h1>Choose what you want: </h1>
+            <form name="choose" class="choose">
+                <input type="radio" name="table" value="table" id="btnTable">table
+                <input type="radio" name="list" value="list" id="btnList">list
+            </form>
+            
 
-            <h1>Choose what you want:</h1>
-                <form name="choose">
-                    <input type="radio" name="table" value="table">table
-                    <input type="radio" name="list" value="list">list
+            <div class="condition">
+            <form name="tableCondition" class="tableCondition">
+            
+                <div class="tr">
+                    <p>Count TR: </p>
+                    <input type="text" name="tr" id="countTr" placeholder="Count TR:">
+                </div>
+
+                <div class="td">
+                    <p>Count TD: </p>
+                    <input type="text" name="td" id="countTd" placeholder="Count TD:">
+                </div>
+            
+            <h2>Add style your table: </h2>
+            
+                <div class="widthTd">
+                    <p>Width of TD: </p>
+                    <input type="text" name="widthTd" id="widthTd" placeholder="Width of TD:">
+                </div>
+
+                <div class="heightTd">
+                    <p>Height of TD: </p>
+                    <input type="text" name="widthTd" id="heightTd" placeholder="Height of TD:">
+                </div>
+
+                <div class="table">
+                    <p>Width of border: </p>
+                        <input type="text" placeholder="Width:" name="widthBr" class="widthBr">
+
+                    <p>Type of border: </p>
+                    <select name="borderType" class="borderType">
+                        <option value="solid">Solid</option>
+                        <option value="dotted">Dotted</option>
+                        <option value="double">Double</option>
+                        <option value="dashed">Dashed</option>
+                    </select>
+
+                    <p>Color of border: </p>
+                    <select name="borderColor" class="borderColor">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+
+                    
                 </form>
+                <input type="button" class="btnCreate" name="btnCreate" value="Create table">
+            </div>
 
-            <div class="container__table">
-                <form name="table">
-                <div class="gg">
-                
-                    <h3>Count TR:</h3> 
-                    <input type="text" placeholder="Count TR: " name="tr">
-                </div>
-                <div class="ff">
-                    <h3>Count TD:</h3> 
-                    <input type="text" placeholder="Count TD: " name="td"> 
-                </div>
-                <h2>Add style to your table: </h2>
-                    <h3>Width of TD:</h3> 
-                    <input type="text" placeholder="Width of TD: " name="width__td">
-                    <h3>Height of TD:</h3> 
-                    <input type="text" placeholder="Height of TD: " name="height__td"> 
+
+
+
+
+
+
+            <!-- <div class="container-add__inner__list">
+                <form name="list" class="list">
+                    <h4>Count Li: </h4>
+                    <input type="text" placeholder="count li" class="countLi" name="countLi">
+                    <h4>Type of marks</h4>
+                    <select name="marks" class="marks">
+                        <option value="circle">circle</option>
+                        <option value="square">square</option>
+                        <option value="upper-roman">upper-roman</option>
+                    </select>
+                    <input type="button" class="btnList" name="btnList" value="create list">
+                </form>
+            </div> -->
+        </div>
+
+
 
             </div>
-                </form>
-        
+
 
     </div>
 
