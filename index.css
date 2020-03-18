@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Bellota|Crimson+Text|Dancing+Script|Inconsolata|Lato&display=swap');
 
+/* BLOCKS */
 
-#textBlock {
+#text__block {
     width: 70%;
     height: 250px;
     background-color: rgb(222, 229, 255);
     margin: 30px auto;
     border-radius: 10px;
     padding: 30px;
-
 }
 
-#emptyBlock {
+#block {
     width: 70%;
     height: 400px;
     background-color: rgb(222, 229, 255);
@@ -30,37 +30,21 @@
     border-radius: 10px;
 }
 
-#secondBlock {
+#second__block {
     width: 100%;
     height: 90%;
     display: none;
 }
 
 
-.choose {
-    width: 320px;
-    height: 40px;
-    border: 1px solid transparent;
-    outline: none;
-    border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
 /* BUTTON */
 
-.btnEditStyle {
+.btn__edit__style {
     display: flex;
     justify-content: center;
 }
 
-#btnEdit {
+#btn__edit {
     width: 90px;
     height: 50px;
     border: 1px solid transparent;
@@ -69,7 +53,7 @@
     outline : none ;
 }
 
-#btnStyle {
+#btn__style {
     width: 90px;
     height: 50px;
     border: 1px solid transparent;
@@ -79,7 +63,7 @@
     outline : none ;
 }
 
-#btnAdd {
+#btn__add {
     width: 90px;
     height: 50px;
     border: 1px solid transparent;
@@ -90,7 +74,7 @@
     outline: none ;
 }
 
-#btnSave {
+#btn__save {
     width: 90px;
     height: 50px;
     border: 1px solid transparent;
@@ -106,7 +90,7 @@
     margin: 10px;
 }
 
-#btnColor {
+#btn__color {
     width: 120px;
     height: 40px;
     background-color: grey;
@@ -116,7 +100,7 @@
     border: 1px solid transparent;
 }
 
-#btnBackground {
+#btn__background {
     width: 120px;
     height: 40px;
     background-color: grey;
@@ -126,7 +110,17 @@
     border: 1px solid transparent;
 }
 
-.btnCreate {
+.btn__create__table {
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: #32CD32;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+#btn__create__list {
     width: 140px;
     height: 40px;
     color: white;
@@ -137,17 +131,9 @@
 }
 
 
-/* HIDE CLASS */
-.none {
-    display: none;
-}
- 
-.flex {
-    display: flex;
-}
+/* LIST COLOR */
 
-
-#listColor {
+#list__color {
     width: 300px;
     height: 200px;
     border: 1px solid #000;
@@ -156,67 +142,64 @@
     flex-wrap: wrap;
 }
 
-.firstRowLeftColor {
+.first__row__left__color {
     width: 33.3%;
     height: 33.3%;
     background-color: red;
     
 }
 
-.firstRowCenterColor {
+.first__row__center__color {
     width: 33.3%;
     height: 33.3%;
     background-color: blue;
 }
 
-.firstRowRightColor {
+.first__row__right__color {
     width: 33.3%;
     height: 33.3%;
     background-color: green;
 }
 
-.secondRowLeftColor {
+.second__row__left__color {
     width: 33.3%;
     height: 33.3%;
     background-color: orange;
 }
 
-.secondRowCenterColor {
+.second__row__center__color {
     width: 33.3%;
     height: 33.3%;
     background-color: yellow;
 }
 
-.secondRowRightColor {
+.second__row__right__color {
     width: 33.3%;
     height: 33.3%;
     background-color: brown;
 }
 
-.thirdRowLeftColor {
+.third__row__left__color {
     width: 33.3%;
     height: 33.3%;
     background-color: darkblue;
 }
 
-.thirdRowCenterColor {
+.third__row__center__color {
     width: 33.3%;
     height: 33.3%;
     background-color: violet;
 }
 
-.thirdRowRightColor {
+.third__row__right__color {
     width: 33.3%;
     height: 33.3%;
     background-color: palevioletred;
 }
 
 
-
-
-
-
-.secondContainer {
+/* FORMS */
+.second__container {
     display: none;
     width: 70%;
     height: 700px;
@@ -226,14 +209,17 @@
     padding: 30px;
 }
 
-.condition {
-    display: none;
-    width: 100%;
+
+.choose__font{
+    width: 320px;
+    height: 40px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
 }
 
-.secondCondition {
+.parameters {
     display: none;
-    /* background-color: red; */
     width: 100%;
 }
 
@@ -251,8 +237,7 @@
 
 }
 
-
-#countTr {
+#count__tr {
     width: 87%;
     height: 40px;
     border: 1px solid transparent;
@@ -260,7 +245,7 @@
     outline: none;
 }
 
-#countTd {
+#count__td {
     width: 87%;
     height: 40px;
     border: 1px solid transparent;
@@ -268,23 +253,20 @@
     outline: none;
 }
 
-
-
-
-.widthTd {
+.width__td {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.heightTd {
+.height__td {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
 
-#widthTd {
+#width__td {
     width: 87%;
     height: 40px;
     border: 1px solid transparent;
@@ -293,24 +275,20 @@
 }
 
 
-#heightTd {
+#height__td {
     width: 87%;
     height: 40px;
     border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
 }
-
-
-
 
 .table {
     display: flex;
     justify-content: space-between;
 }
 
-
-.widthBr {
+.width__border {
     width: 20%;
     height: 40px;
     border: 1px solid transparent;
@@ -318,8 +296,7 @@
     outline: none;
 }
 
-
-.borderType {
+.border__type {
     width: 20%;
     height: 40px;
     border: 1px solid transparent;
@@ -327,7 +304,7 @@
     outline: none;
 }
 
-.borderColor {
+.border__color {
     width: 20%;
     height: 40px;
     border: 1px solid transparent;
@@ -335,24 +312,25 @@
     outline: none;
 }
 
+.list__parameters {
+    display: none;
+    width: 100%;
+}
 
-
-.countLi {
+.count__li {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
 
-
-#countLi {
+#count__li {
     width: 87%;
     height: 40px;
     border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
 }
-
 
 #marks {
     display: flex;
@@ -368,12 +346,29 @@
     outline: none;
 }
 
-#btnCreateList {
-    width: 140px;
-    height: 40px;
-    color: white;
-    background-color: #32CD32;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    outline: none;
+
+
+
+
+/* HIDE CLASSES*/
+.none {
+    display: none;
 }
+ 
+.flex {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

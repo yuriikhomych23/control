@@ -1,18 +1,8 @@
-let textBlock = document.getElementById('textBlock')
-let area = document.getElementById('area')
-let btnEdit = document.getElementById('btnEdit')
-let btnAdd = document.getElementById('btnAdd')
-let cont = document.querySelector('.cont')
-let ss = document.querySelector('.secondContainer')
-let container = document.querySelector('.container')
-let btnSave = document.getElementById('btnSave');
-let secondBlock = document.getElementById('secondBlock')
-let btnStyle = document.getElementById('btnStyle');
-let condition = document.querySelector('.condition')
-let secondCondition = document.querySelector('.secondCondition');
-
 
 //BUTTON EDIT
+let secondBlock = document.getElementById('second__block');
+let area = document.getElementById('area');
+let btnEdit = document.getElementById('btn__edit');
 btnEdit.addEventListener('click', function(event) {
     area.style.display = 'flex';
     area.innerHTML = textBlock.innerHTML ;
@@ -22,15 +12,18 @@ btnEdit.addEventListener('click', function(event) {
 })
 
 //BUTTON ADD 
+let container = document.querySelector('.container');
+let secondContainer = document.querySelector('.second__container');
+let btnAdd = document.getElementById('btn__add');
 btnAdd.addEventListener('click', function() {
     container.style.display = 'none';
-    ss.style.display = 'block';
+    secondContainer.style.display = 'block';
 })
 
 
-
 //BUTTON SAVE
-
+let textBlock = document.getElementById('text__block');
+let btnSave = document.getElementById('btn__save');
 btnSave.addEventListener('click', function() {
     textBlock.innerHTML = area.value;
     area.style.display = 'none';
@@ -40,7 +33,7 @@ btnSave.addEventListener('click', function() {
 
 
 //BUTTON STYLE
-
+let btnStyle = document.getElementById('btn__style');
 btnStyle.addEventListener('click', function() {
     secondBlock.style.display = 'flex';
     area.style.display = 'none';
@@ -51,23 +44,16 @@ btnStyle.addEventListener('click', function() {
 
 
 //FONT-FAMILY
-let form = document.forms['style'];
-form.family.addEventListener('change', function() {
+let styleForm = document.forms['style'];
+styleForm.fontFamily.addEventListener('change', function() {
     textBlock.style.fontFamily = this.value;
 })
 
 
-
-
-
-
-
-
-
 //BTN COLOR  ДОРОБИТИ 
 let getSel = x => document.querySelector(x);
-let btnColor = document.getElementById('btnColor');
-let listColor = document.getElementById('listColor');
+let btnColor = document.getElementById('btn__color');
+let listColor = document.getElementById('list__color');
 btnColor.addEventListener('click', function() {
     listColor.style.display = 'flex';
     for (let i = 0; i < listColor.children.length; i++) {
@@ -81,7 +67,7 @@ btnColor.addEventListener('click', function() {
 
 
 //BTN BACKGROUND COLOR
-let btnBackground = document.getElementById('btnBackground');
+let btnBackground = document.getElementById('btn__background');
 btnBackground.addEventListener('click', function() {
     listColor.style.display = 'flex';
     for (let i = 0; i < listColor.children.length; i++) {
@@ -93,87 +79,46 @@ btnBackground.addEventListener('click', function() {
 });
 
 
-
-
 //BOLD NORMAL ДОРОБИТИ
-let bold = document.getElementById('bold');
-let normal = document.getElementById('normal')
-bold.addEventListener('click', function() {
+let checkboxBold = document.getElementById('checkbox__bold');
+let checkboxNormal = document.getElementById('checkbox__normal')
+checkboxBold.addEventListener('click', function() {
     textBlock.style.fontWeight = this.value;
 });
 
-normal.addEventListener('click', function () {
+checkboxNormal.addEventListener('click', function () {
     textBlock.style.fontWeight = this.value;
 });
-
-
-
-// CREATE LIST
-
-
-
-
-
-
-
-
 
 
 
 
 // BUTTON TABLE
-let btnTable = document.getElementById('btnTable');
-let btnList = document.getElementById('btnList')
-let tableCondition = document.forms['tableCondition'];
-let btnCreate = document.querySelector('.btnCreate');
-
+let listParameters = document.querySelector('.list__parameters');
+let btnTable = document.getElementById('btn__table');
+let btnList = document.getElementById('btn__list')
+let tableParameters = document.forms['table__parameters'];
+let btnCreateTable = document.querySelector('.btn__create__table');
+let parameters = document.querySelector('.parameters');
 btnTable.addEventListener('click', function() {
-    condition.style.display = 'block';
-    secondCondition.style.display = 'none';
+    parameters.style.display = 'block';
+    listParameters.style.display = 'none';
 })
 
-tableCondition.btnCreate.addEventListener('click', function() {
+tableParameters.btnCreateTable.addEventListener('click', function() {
     container.style.display = 'flex';
-    ss.style.display = 'none';
+    secondContainer.style.display = 'none';
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 // BUTTON LIST  
 btnList.addEventListener('click', function () {
-    condition.style.display = 'none';
-    secondCondition.style.display = 'block';
+    tableParameters.style.display = 'none';
+    listParameters.style.display = 'block';
 })
 
 
-
-
-
-let formList = document.forms['conditionList'];
-let btnCreateList = document.getElementById('btnCreateList');
-let ul = document.createElement('ul');
-let li = document.createElement('li');
-
-
-formList.btnCreateList.addEventListener('click', function() {
-    getSel('container').style.display = 'flex';
-    getSel('ss').style.display = 'none';
-
-})
 
 
 

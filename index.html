@@ -10,116 +10,131 @@
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div id="textBlock">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
 
-        <div class="btnEditStyle">
-            <input type="button" value="edit" id="btnEdit">
-            <input type="button" value="style" id="btnStyle">
-        </div>
 
-        <div id="emptyBlock">
-
-            <div id="firstBlock">
-                <textarea name="" id="area" cols="30" rows="10"></textarea>
-                    <div class="btnAddSave">
-                        <input type="button" id="btnAdd" value ="add">
-                        <input type="button" id="btnSave" value = "save">
-                    </div>
-            </div>
-                    
-            <div id="secondBlock">
-            
-                <form name="style">
-                    <h3>Font size:</h3>
-                        <input type="radio" name="fontSize" value="12px" checked>12px
-                        <input type="radio" name="fontSize" value="14px">14px
-                        <input type="radio" name="fontSize" value="16px">16px
-                        <input type="radio" name="fontSize" value="18px">18px
-                        <input type="radio" name="fontSize" value="20px">20px
-                
-                    <h3>Font Family:</h3>
-                        <select name="family" class="choose" >
-                            <option value="Lato,sans-serif">'Lato', sans-serif;</option>
-                            <option value="'Bellota', cursive">'Bellota', cursive;</option>
-                            <option value="'Inconsolata', monospace">'Inconsolata', monospace;</option>
-                            <option value="'Crimson Text', serif">'Crimson Text', serif;</option>
-                            <option value="'Dancing Script', cursive">'Dancing Script', cursive;</option>
-                        </select>
-
-                    <h3>Colors : </h3>
-                        <input type="button" id="btnColor" value="Color of text">
-                        <input type="button" id="btnBackground" value="Background color">
-
-                    <h3>Style:</h3>
-                        <input type="checkbox" id="bold" value="bold">Bold text
-                        <input type="checkbox" id="normal" value="normal">Normal
-                </form>
-           
-
-            <div id="listColor">
-                <div class="firstRowLeftColor"></div>
-                <div class="firstRowCenterColor"></div>
-                <div class="firstRowRightColor"></div>
-                <div class="secondRowLeftColor"></div>
-                <div class="secondRowCenterColor"></div>
-                <div class="secondRowRightColor"></div>
-                <div class="thirdRowLeftColor"></div>
-                <div class="thirdRowCenterColor"></div>
-                <div class="thirdRowRightColor"></div>
-            </div>
-            </div>
-        </div>
+    <div id="text__block">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
     </div>
 
-    <div class="secondContainer">
+
+    <div class="btn__edit__style">
+        <input type="button" value="edit" id="btn__edit">
+        <input type="button" value="style" id="btn__style">
+    </div>
 
 
-            <h1>Choose what you want: </h1>
-            <form name="choose" class="choose">
-                <input type="radio" name="table" value="table" id="btnTable">table
-                <input type="radio" name="list" value="list" id="btnList">list
+    <div id="block">
+
+        <div id="first__block">
+
+            <textarea name="" id="area" cols="30" rows="10"></textarea>
+
+            <div class="btnAddSave">
+                <input type="button" id="btn__add" value ="add">
+                <input type="button" id="btn__save" value = "save">
+            </div>
+
+        </div>
+                    
+        <div id="second__block">
+            
+            <form name="style">
+
+                <h3>Font size:</h3>
+                    <input type="radio" name="fontSize" value="12px" checked>12px
+                    <input type="radio" name="fontSize" value="14px">14px
+                    <input type="radio" name="fontSize" value="16px">16px
+                    <input type="radio" name="fontSize" value="18px">18px
+                    <input type="radio" name="fontSize" value="20px">20px
+                
+                <h3>Font Family:</h3>
+                    <select name="fontFamily" class="choose__font" >
+                        <option value="Lato,sans-serif">'Lato', sans-serif;</option>
+                        <option value="'Bellota', cursive">'Bellota', cursive;</option>
+                        <option value="'Inconsolata', monospace">'Inconsolata', monospace;</option>
+                        <option value="'Crimson Text', serif">'Crimson Text', serif;</option>
+                        <option value="'Dancing Script', cursive">'Dancing Script', cursive;</option>
+                    </select>
+
+                <h3>Colors : </h3>
+                    <input type="button" id="btn__color" value="Color of text">
+                    <input type="button" id="btn__background" value="Background color">
+
+                <h3>Style:</h3>
+                    <input type="checkbox" id="checkbox__bold" value="bold">Bold text
+                    <input type="checkbox" id="checkbox__normal" value="normal">Normal
+
             </form>
+           
+
+            <div id="list__color">
+                <div class="first__row__left__color"></div>
+                <div class="first__row__center__color"></div>
+                <div class="first__row__right__color"></div>
+                <div class="second__row__left__color"></div>
+                <div class="second__row__center__color"></div>
+                <div class="second__row__right__color"></div>
+                <div class="third__row__left__color"></div>
+                <div class="third__row__center__color"></div>
+                <div class="third__row__right__color"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="second__container">
+
+    <h1>Choose what you want: </h1>    
+
+        <form name="choose__table__list" class="choose__table__list">
+            <input type="radio" name="table" value="table" id="btn__table">table
+            <input type="radio" name="list" value="list" id="btn__list">list
+        </form>
             
 
-            <div class="condition">
-            <form name="tableCondition" class="tableCondition">
+        <div class="parameters">
+
+            <form name="table__parameters">
             
                 <div class="tr">
                     <p>Count TR: </p>
-                    <input type="text" name="tr" id="countTr" placeholder="Count TR:">
+                    <input type="text" name="tr" id="count__tr" placeholder="Count TR:">
                 </div>
 
                 <div class="td">
                     <p>Count TD: </p>
-                    <input type="text" name="td" id="countTd" placeholder="Count TD:">
+                    <input type="text" name="td" id="count__td" placeholder="Count TD:">
                 </div>
             
-            <h2>Add style your table: </h2>
+
+                <h2>Add style your table: </h2>
             
-                <div class="widthTd">
+                <div class="width__td">
                     <p>Width of TD: </p>
-                    <input type="text" name="widthTd" id="widthTd" placeholder="Width of TD:">
+                    <input type="text" name="widthTd" id="width__td" placeholder="Width of TD:">
                 </div>
 
-                <div class="heightTd">
+                <div class="height__td">
                     <p>Height of TD: </p>
-                    <input type="text" name="widthTd" id="heightTd" placeholder="Height of TD:">
+                    <input type="text" name="widthTd" id="height__td" placeholder="Height of TD:">
                 </div>
 
                 <div class="table">
                     <p>Width of border: </p>
-                        <input type="text" placeholder="Width:" name="widthBr" class="widthBr">
+                    <input type="text" placeholder="Width:" name="widthBr" class="width__border">
 
                     <p>Type of border: </p>
-                    <select name="borderType" class="borderType">
+                    <select name="border__type" class="border__type">
                         <option value="solid">Solid</option>
                         <option value="dotted">Dotted</option>
                         <option value="double">Double</option>
@@ -127,29 +142,31 @@
                     </select>
 
                     <p>Color of border: </p>
-                    <select name="borderColor" class="borderColor">
+                    <select name="border__color" class="border__color">
                         <option value="black">Black</option>
                         <option value="red">Red</option>
                         <option value="blue">Blue</option>
                         <option value="green">Green</option>
                     </select>
+
                 </div>
 
                     
-                </form>
-                <input type="button" class="btnCreate" name="btnCreate" value="Create table">
-            </div>
+            </form>
+
+            <input type="button" class="btn__create__table" name="btn__create__table" value="Create table">
+
+        </div>
 
 
+        <div class="list__parameters">
 
-
-            <div class="secondCondition">
-                <form name="conditionList">
+            <form name="list__parameters">
                 
-                    <div class="countLi">
-                        <p>Count LI: </p>
-                        <input type="text" name="li" id="countLi" placeholder="Count LI:">
-                    </div>
+                <div class="count__li">
+                    <p>Count LI: </p>
+                    <input type="text" name="li" id="count__li" placeholder="Count LI:">
+                </div>
 
                 <div id="marks">
                     <p>Color of border: </p>
@@ -159,21 +176,15 @@
                         <option value="square">Square</option>
                     </select>
                 </div>
-                </form>
-                <input type="button" id="btnCreateList" name="btnCreateList" value="Create list">
 
-            </div>
+            </form>
+                <input type="button" id="btn__create__list" name="btn__create__list" value="Create list">
 
+        </div>
 
-
-
-
-
-           
 </div>
 
+
     <script src="main.js"></script>
-</body>
-        <script src="main.js"></script>
 </body>
 </html>
