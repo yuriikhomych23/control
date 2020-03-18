@@ -368,7 +368,7 @@
     outline: none;
 }
 
-.btnCreateList {
+#btnCreateList {
     width: 140px;
     height: 40px;
     color: white;

@@ -58,10 +58,7 @@ form.family.addEventListener('change', function() {
 
 
 
-let size = document.getElementsByName('fontSize');
-form.size.addEventListener('change', function() {
-    textBlock.style.fontSize = this.value;
-})
+
 
 
 
@@ -112,10 +109,12 @@ normal.addEventListener('click', function () {
 
 
 // CREATE LIST
-let btnCreateList = document.querySelector('.btnCreateList');
-let formLift = document.forns['conditionList'];
 
-let createList = document.createElement('li');
+
+
+
+
+
 
 
 
@@ -126,12 +125,34 @@ let createList = document.createElement('li');
 let btnTable = document.getElementById('btnTable');
 let btnList = document.getElementById('btnList')
 let tableCondition = document.forms['tableCondition'];
+let btnCreate = document.querySelector('.btnCreate');
 
 btnTable.addEventListener('click', function() {
     condition.style.display = 'block';
     secondCondition.style.display = 'none';
-
 })
+
+tableCondition.btnCreate.addEventListener('click', function() {
+    container.style.display = 'flex';
+    ss.style.display = 'none';
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // BUTTON LIST  
 btnList.addEventListener('click', function () {
     condition.style.display = 'none';
@@ -142,6 +163,17 @@ btnList.addEventListener('click', function () {
 
 
 
+let formList = document.forms['conditionList'];
+let btnCreateList = document.getElementById('btnCreateList');
+let ul = document.createElement('ul');
+let li = document.createElement('li');
+
+
+formList.btnCreateList.addEventListener('click', function() {
+    getSel('container').style.display = 'flex';
+    getSel('ss').style.display = 'none';
+
+})
 
 
 
