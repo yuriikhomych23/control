@@ -18,6 +18,7 @@ let btnAdd = document.getElementById('btn__add');
 btnAdd.addEventListener('click', function() {
     container.style.display = 'none';
     secondContainer.style.display = 'block';
+    listParameters.style.display = 'none';
 })
 
 
@@ -49,8 +50,14 @@ styleForm.fontFamily.addEventListener('change', function() {
     textBlock.style.fontFamily = this.value;
 })
 
+//FONT-SIZE
+for (let i = 0; i < 5; i++) {
+    styleForm.elements[i].addEventListener('click', function() {
+        textBlock.style.fontSize = this.value;
+    })
+}
 
-//BTN COLOR  ДОРОБИТИ 
+//BTN COLOR  ДОРОБИТИ
 let getSel = x => document.querySelector(x);
 let btnColor = document.getElementById('btn__color');
 let listColor = document.getElementById('list__color');
@@ -58,7 +65,7 @@ btnColor.addEventListener('click', function() {
     listColor.style.display = 'flex';
     for (let i = 0; i < listColor.children.length; i++) {
         listColor.children[i].onclick = function() {
-            textBlock.style.color = getComputedStyle(this).color;
+            textBlock.style.color = getComputedStyle(this).backgroundColor;
             listColor.style.display = 'none'
         }
     }
@@ -105,18 +112,55 @@ btnTable.addEventListener('click', function() {
     listParameters.style.display = 'none';
 })
 
-tableParameters.btnCreateTable.addEventListener('click', function() {
-    container.style.display = 'flex';
-    secondContainer.style.display = 'none';
-})
-
 
 
 // BUTTON LIST  
 btnList.addEventListener('click', function () {
-    tableParameters.style.display = 'none';
+    parameters.style.display = 'none';
     listParameters.style.display = 'block';
 })
+
+let btnCreateList = document.getElementById('btn__create__list');
+let countLi = document.getElementById('count__li')
+let listForm = document.forms['list__parameters']
+let divList = document.createElement('div');
+let listUl = document.createElement('ul');
+
+listForm.btnCreateList.addEventListener('click', function() {
+    container.style.display = 'flex';
+    secondContainer.style.display = 'none';
+    for (let i = 0; i < listForm.countLi.value; i++) {
+        let li = document.createElement('li');
+        li.innerHTML = 'Lorem';
+        listUl.appendChild(li);
+    }
+    list.style.listStyleType = listForm.marks.value;
+  divList.appendChild(listUl);
+
+  area.value += divList.innerHTML;
+  listForm.reset();
+})
+//.................
+// let listForm = document.forms["list"];
+// let divList = document.createElement('div')
+// let list = document.createElement("ul");
+
+// listForm.btnList.addEventListener("click", function () {
+//   getSel(".container").style.display = "flex";
+//   getSel(".container-add").style.display = "none";
+//   for (let i = 0; i < listForm.countLi.value; i++) {
+//     let li = document.createElement("li");
+//     li.innerHTML = " Lorem";
+//     list.appendChild(li);
+//     list.style.padding = "10px";
+//   }
+//   list.style.listStyleType = listForm.marks.value;
+//   divList.appendChild(list);
+
+//   area.value += divList.innerHTML;
+//   listForm.reset();
+// });
+
 
 
 
