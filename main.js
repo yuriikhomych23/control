@@ -57,7 +57,7 @@ for (let i = 0; i < 5; i++) {
     })
 }
 
-//BTN COLOR  ДОРОБИТИ
+//BTN COLOR  
 let getSel = x => document.querySelector(x);
 let btnColor = document.getElementById('btn__color');
 let listColor = document.getElementById('list__color');
@@ -86,7 +86,7 @@ btnBackground.addEventListener('click', function() {
 });
 
 
-//BOLD NORMAL ДОРОБИТИ
+//BOLD NORMAL 
 let checkboxBold = document.getElementById('checkbox__bold');
 let checkboxNormal = document.getElementById('checkbox__normal')
 checkboxBold.addEventListener('click', function() {
@@ -120,46 +120,42 @@ btnList.addEventListener('click', function () {
     listParameters.style.display = 'block';
 })
 
+
+//CREATE LIST
+
 let btnCreateList = document.getElementById('btn__create__list');
 let countLi = document.getElementById('count__li')
 let listForm = document.forms['list__parameters']
 let divList = document.createElement('div');
 let listUl = document.createElement('ul');
+let listLi = document.createElement('li');
 
-listForm.btnCreateList.addEventListener('click', function() {
-    container.style.display = 'flex';
+
+btnCreateList.addEventListener('click', function() {
+    container.style.display = 'block';
     secondContainer.style.display = 'none';
-    for (let i = 0; i < listForm.countLi.value; i++) {
-        let li = document.createElement('li');
-        li.innerHTML = 'Lorem';
-        listUl.appendChild(li);
+    for(let i = 0; i < listForm.countLi.value; i++) {
+        listLi.innerHTML = 'Lorem';
+        listUl.appendChild(listLi);
+            
     }
-    list.style.listStyleType = listForm.marks.value;
-  divList.appendChild(listUl);
-
-  area.value += divList.innerHTML;
-  listForm.reset();
+    divList.appendChild(listUl);
+    listUl.style.listStyleType = listForm.marks.value;
+    area.value += divList.innerHTML;
 })
-//.................
-// let listForm = document.forms["list"];
-// let divList = document.createElement('div')
-// let list = document.createElement("ul");
 
-// listForm.btnList.addEventListener("click", function () {
-//   getSel(".container").style.display = "flex";
-//   getSel(".container-add").style.display = "none";
-//   for (let i = 0; i < listForm.countLi.value; i++) {
-//     let li = document.createElement("li");
-//     li.innerHTML = " Lorem";
-//     list.appendChild(li);
-//     list.style.padding = "10px";
-//   }
-//   list.style.listStyleType = listForm.marks.value;
-//   divList.appendChild(list);
 
-//   area.value += divList.innerHTML;
-//   listForm.reset();
-// });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
