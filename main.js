@@ -124,22 +124,21 @@ btnList.addEventListener('click', function () {
 //CREATE LIST
 
 let btnCreateList = document.getElementById('btn__create__list');
-let countLi = document.getElementById('count__li')
 let listForm = document.forms['list__parameters']
 let divList = document.createElement('div');
 let listUl = document.createElement('ul');
-let listLi = document.createElement('li');
+
 
 
 btnCreateList.addEventListener('click', function() {
     container.style.display = 'block';
     secondContainer.style.display = 'none';
-    for(let i = 0; i < listForm.countLi.value; i++) {
+    for(let i = 0; i < listForm.li.value; i++) {
+        let listLi = document.createElement('li');
         listLi.innerHTML = 'Lorem';
         listUl.appendChild(listLi);
-            
+        divList.appendChild(listUl);
     }
-    divList.appendChild(listUl);
     listUl.style.listStyleType = listForm.marks.value;
     area.value += divList.innerHTML;
 })
