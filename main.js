@@ -140,8 +140,35 @@ btnCreateList.addEventListener('click', function() {
         divList.appendChild(listUl);
     }
     listUl.style.listStyleType = listForm.marks.value;
-    area.value += divList.innerHTML;
-})
+    area.value += divList.innerHTML;    
+});
+
+
+
+//CREATE TABLE 
+btnCreateTable.addEventListener('click', function() {
+    let createTable = document.createElement('table');
+    let divTable = document.createElement('div');
+    for (let i = 0; i < tableParameters.tr.value; i++) {
+        let tableTr = document.createElement('tr');
+        for (let i = 0; i < tableParameters.td.value; i++) {
+            let tableTd = document.createElement('td');
+            tableTd.style.width = tableParameters.widthTd.value + 'px';
+            tableTd.style.height = tableParameters.heightTd.value + 'px';
+            tableTd.innerText = 'Lorem';
+            tableTd.style.borderWidth = tableParameters.widthBr.value + 'px';
+            tableTd.style.borderStyle = tableParameters.border__type.value;
+            tableTd.style.borderColor = tableParameters.border__color.value;
+            tableTr.appendChild(tableTd);
+        }
+        tableTr.style.borderWidth = tableParameters.widthBr.value + 'px';
+        createTable.appendChild(tableTr);
+    }
+    divTable.appendChild(createTable);
+    area.value += divTable.innerHTML;
+    container.style.display = 'block';
+    secondContainer.style.display = 'none';
+});
 
 
 
