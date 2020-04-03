@@ -4,16 +4,16 @@
 
 #text__block {
     width: 70%;
-    height: 250px;
+    min-height: 250px;
     background-color: rgb(222, 229, 255);
     margin: 30px auto;
     border-radius: 10px;
     padding: 30px;
 }
 
-#block {
+#block__style {
     width: 70%;
-    height: 400px;
+    min-height: 280px;
     background-color: rgb(222, 229, 255);
     margin: 30px auto;
     border-radius: 10px;
@@ -37,6 +37,8 @@
 }
 
 
+
+
 /* BUTTON */
 
 .btn__edit__style {
@@ -51,6 +53,7 @@
     border-radius: 5px;
     background-color: rgb(255, 230, 0);
     outline : none ;
+    margin-right: 10px;
 }
 
 #btn__style {
@@ -72,6 +75,8 @@
     color: white;
     display: none;
     outline: none ;
+    margin-right: 10px;
+    align-items: center;
 }
 
 #btn__save {
@@ -83,17 +88,18 @@
     color: white;
     display: none;
     outline: none;
+    text-align: center;
 }
 
 .btnAddSave {
     display: flex;
-    margin: 10px;
+    margin: 10px 36px;
 }
 
 #btn__color {
-    width: 120px;
+    width: 140px;
     height: 40px;
-    background-color: grey;
+    background-color: rgb(173, 173, 173);
     color: white;
     border-radius: 5px;
     outline: none;
@@ -101,9 +107,9 @@
 }
 
 #btn__background {
-    width: 120px;
+    width: 140px;
     height: 40px;
-    background-color: grey;
+    background-color: rgb(173, 173, 173);
     color: white;
     border-radius: 5px;
     outline: none;
